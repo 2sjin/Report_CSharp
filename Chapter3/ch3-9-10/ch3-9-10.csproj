@@ -7,7 +7,7 @@
     <ProjectGuid>{F297D434-94AB-4B32-BFB2-98015CEBF8DF}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>ch3_9_10</RootNamespace>
-    <AssemblyName>ch3_9_10</AssemblyName>
+    <AssemblyName>ch3-9-10</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="ch3-9-10.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
