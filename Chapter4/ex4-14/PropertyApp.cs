@@ -57,7 +57,7 @@ namespace ex4_14 {
         }
     }
 
-    class Program {
+    class PropertyApp {
         static void Main(string[] args) {
             Number n = new Number();
 
@@ -73,7 +73,7 @@ namespace ex4_14 {
 
             // Console.WriteLine("{0} + {1} = {2}", n.getNum1(), n.getNum2(), n.Add());
             // Console.WriteLine("{0} + {1} = {2}", n.Num1, n.Num2, n.Add());
-            Console.WriteLine("Correct: {0} + {1} = {2}", n.AutoNum1, n.AutoNum2, n.AutoAdd());
+            Console.WriteLine("{0} + {1} = {2}", n.AutoNum1, n.AutoNum2, n.AutoAdd());
         }
     }
 }
