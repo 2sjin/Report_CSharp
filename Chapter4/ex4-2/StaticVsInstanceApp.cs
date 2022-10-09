@@ -12,16 +12,16 @@ namespace ex4_2 {
 
     class Program {
         static void Main(string[] args) {
-            StaticVsInstanceApp obj = new StaticVsInstanceApp();
+            StaticVsInstanceApp instance = new StaticVsInstanceApp();
 
-            obj.instanceNum = 10;
-            // app.staticNum = 10;
+            instance.instanceNum = 10;
+            // instance.staticNum = 10;
 
             // StaticVsInstanceApp.instanceNum = 20;
             StaticVsInstanceApp.staticNum = 20;
 
-            Console.WriteLine("object Number={0}, static Number={1}",
-                                obj.instanceNum, StaticVsInstanceApp.staticNum);
+            Console.WriteLine("instance Number={0}, static Number={1}",
+                                instance.instanceNum, StaticVsInstanceApp.staticNum);
         }
     }
 }
