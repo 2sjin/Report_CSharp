@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 // Console.Read() 대신 Console.Readline() 사용
 
 namespace ex2_21 {
-    internal class Program {
+    internal class ConditionalOperatorApp {
         static void Main(string[] args) {
             int a, b, c;
             int readValue;

@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace ex2_29 {
-    internal class Program {
+    internal class BoxingUnBoxingApp {
         static void Main(string[] args) {
             double foo = 526.34;
             object bar = foo;       // 박싱(값형 -> 참조형)
