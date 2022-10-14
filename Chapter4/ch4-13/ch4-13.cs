@@ -35,7 +35,6 @@ namespace ch4_13 {
         public bool IsEmpty() {
             return sp <= -1;     // 스택 포인터가 -1이면 비어있는 상태
         }
-
     }
 
     internal class Program {
