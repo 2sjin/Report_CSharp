@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ch5_9 {
     // 인터페이스
@@ -20,6 +16,7 @@ namespace ch5_9 {
 
         // 생성자
         public Stack(int i=100) {
+            Console.WriteLine("크기가 {0}인 스택 생성됨.", i);
             stack = new string[i];
         }
 
@@ -67,23 +64,41 @@ namespace ch5_9 {
         }
 
         static void Main(string[] args) {
-            string inputData;
+            string inputData, searchData;
 
             Stack stack = new Stack();
+            PrintStackInfo(stack);
 
-            Console.WriteLine("스택에 PUSH할 문자열을 입력하세요\n(종료는 입력 없이 Enter)");
+            Console.WriteLine("\n스택에 PUSH할 문자열을 입력하세요. (종료하려면 입력 없이 [Enter])");
+            
+            // PUSH 반복
             while(true) {
-
                 Console.Write("PUSH >> ");
                 inputData = Console.ReadLine();
-                if (inputData.Equals(""))
-                    break;
+                if (inputData.Equals(""))   // 공백 입력 시
+                    break;                  // 반복 종료
                 stack.Insert(inputData);    // PUSH
                 PrintStackInfo(stack);
             }
 
+            Console.WriteLine("\n검색할 문자열을 입력하세요. (종료하려면 입력 없이 [Enter])");
+
+            // SEARCH 반복
+            while (true) {
+                Console.Write("SEARCH >> ");
+                searchData = Console.ReadLine();
+                if (searchData.Equals(""))   // 공백 입력 시
+                    break;                   // 반복 종료
+                else if (stack.Search(searchData))
+                    Console.WriteLine(searchData + " : Stack 내에 존재합니다.");
+                else
+                    Console.WriteLine(searchData + " : Stack 내에 없습니다.");
+            }
+
             Console.WriteLine("");
-            while(stack.NumOfElements() > 0) {
+
+            // POP 반복
+            while (stack.NumOfElements() > 0) {
                 Console.WriteLine("POP >> " + stack.delete());
                 PrintStackInfo(stack);
             }
