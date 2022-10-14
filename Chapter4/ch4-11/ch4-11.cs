@@ -31,11 +31,6 @@ namespace ch4_11 {
         override public string ToString() {
             return this.numerator + "/" + this.denominator;
         }
-
-        // 메소드: 최대공약수
-        override public void GCD() {
-            return void;
-        }
     }
 
     internal class Program {
