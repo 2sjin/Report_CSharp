@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 // 거스름돈 동전의 개수가 최소가 되도록 계산하는 프로그램
 

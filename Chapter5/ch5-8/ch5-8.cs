@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ch5_8 {
     abstract class figure {     // 도형 클래스: 추상 클래스

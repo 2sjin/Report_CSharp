@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 // 연습문제 4.16을 해결하기 위해 연습문제 4.12를 선행하였음
 

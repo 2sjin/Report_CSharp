@@ -29,7 +29,6 @@ namespace ch4_11 {
             int b = f1.numerator;
             int c = f2.denominator;
             int d = f2.numerator;
-
             return new Fraction((b * c) + (a * d), a * c);
         }
 
@@ -39,7 +38,6 @@ namespace ch4_11 {
             int b = f1.numerator;
             int c = f2.denominator;
             int d = f2.numerator;
-
             return new Fraction((b * c) - (a * d), a * c);
         }
 
@@ -49,7 +47,6 @@ namespace ch4_11 {
             int b = f1.numerator;
             int c = f2.denominator;
             int d = f2.numerator;
-
             return new Fraction(b * d, a * c);
         }
 
@@ -59,7 +56,6 @@ namespace ch4_11 {
             int b = f1.numerator;
             int c = f2.denominator;
             int d = f2.numerator;
-
             return new Fraction(b * c, a * d);
         }
 
@@ -143,7 +139,7 @@ namespace ch4_11 {
 
             // 분수 2 입력
             f2 = createFraction("분수 2");
-            Console.WriteLine("d/c = {0}\n", f1);
+            Console.WriteLine("d/c = {0}\n", f2);
 
             // 분수의 사칙연산
             fAdd = Fraction.Fix(Fraction.AddFraction(f1, f2));
