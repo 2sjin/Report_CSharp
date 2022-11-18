@@ -1,5 +1,5 @@
 ﻿namespace WindowsFormsApp1116 {
-    partial class Form7 {
+    partial class FormEx7 {
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -31,39 +31,42 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(48, 46);
+            this.label1.Location = new System.Drawing.Point(55, 58);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(251, 12);
+            this.label1.Size = new System.Drawing.Size(316, 15);
             this.label1.TabIndex = 0;
             this.label1.Text = "예제 9-7 응용 : 파일 대신 디렉토리 리턴 받기";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(50, 92);
+            this.textBox1.Location = new System.Drawing.Point(57, 115);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(344, 21);
+            this.textBox1.Size = new System.Drawing.Size(393, 25);
             this.textBox1.TabIndex = 1;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(165, 138);
+            this.button1.Location = new System.Drawing.Point(189, 172);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(108, 39);
+            this.button1.Size = new System.Drawing.Size(123, 49);
             this.button1.TabIndex = 2;
             this.button1.Text = "디렉토리 찾기";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Form7
+            // FormEx7
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(428, 206);
+            this.ClientSize = new System.Drawing.Size(489, 258);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
-            this.Name = "Form7";
-            this.Text = "Form7";
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Name = "FormEx7";
+            this.Text = "FormEx7";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -1,12 +1,11 @@
 ﻿using System;
-using System.IO;
 using System.Windows.Forms;
 
 // 예제 9-7 응용 : 파일 대신 폴더를 찾는 다이얼로그를 띄워 폴더의 디렉토리를 리턴받음
 
 namespace WindowsFormsApp1116 {
-    public partial class Form7 : Form {
-        public Form7() {
+    public partial class FormEx7 : Form {
+        public FormEx7() {
             InitializeComponent();
         }
 
@@ -22,7 +21,6 @@ namespace WindowsFormsApp1116 {
             // 폴더를 선택하지 않고 취소한 경우, 메시지 출력
             else if (result.ToString() == "Cancel")
                 MessageBox.Show("폴더가 선택되지 않았습니다.", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Information);
-
         }
     }
 }
