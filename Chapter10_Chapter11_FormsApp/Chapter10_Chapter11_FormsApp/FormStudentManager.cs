@@ -13,9 +13,5 @@ namespace Chapter10_Chapter11_FormsApp {
         public FormStudentManager() {
             InitializeComponent();
         }
-
-        private void label1_Click(object sender, EventArgs e) {
-
-        }
     }
 }

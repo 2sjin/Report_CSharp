@@ -60,14 +60,14 @@
             // 예제자유ToolStripMenuItem
             // 
             this.예제자유ToolStripMenuItem.Name = "예제자유ToolStripMenuItem";
-            this.예제자유ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.예제자유ToolStripMenuItem.Size = new System.Drawing.Size(192, 26);
             this.예제자유ToolStripMenuItem.Text = "예제 10-4 변형";
             this.예제자유ToolStripMenuItem.Click += new System.EventHandler(this.예제104ToolStripMenuItem_Click);
             // 
             // 예제109ToolStripMenuItem
             // 
             this.예제109ToolStripMenuItem.Name = "예제109ToolStripMenuItem";
-            this.예제109ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.예제109ToolStripMenuItem.Size = new System.Drawing.Size(192, 26);
             this.예제109ToolStripMenuItem.Text = "예제 10-9";
             this.예제109ToolStripMenuItem.Click += new System.EventHandler(this.예제109ToolStripMenuItem_Click);
             // 
@@ -83,14 +83,14 @@
             // 예제118ToolStripMenuItem
             // 
             this.예제118ToolStripMenuItem.Name = "예제118ToolStripMenuItem";
-            this.예제118ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.예제118ToolStripMenuItem.Size = new System.Drawing.Size(217, 26);
             this.예제118ToolStripMenuItem.Text = "예제 11-8";
             this.예제118ToolStripMenuItem.Click += new System.EventHandler(this.예제118ToolStripMenuItem_Click);
             // 
             // 학생관리프로그램ToolStripMenuItem
             // 
             this.학생관리프로그램ToolStripMenuItem.Name = "학생관리프로그램ToolStripMenuItem";
-            this.학생관리프로그램ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.학생관리프로그램ToolStripMenuItem.Size = new System.Drawing.Size(217, 26);
             this.학생관리프로그램ToolStripMenuItem.Text = "학생관리 프로그램";
             this.학생관리프로그램ToolStripMenuItem.Click += new System.EventHandler(this.학생관리프로그램ToolStripMenuItem_Click);
             // 
@@ -131,6 +131,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FormMain";
             this.Text = "Form1";
