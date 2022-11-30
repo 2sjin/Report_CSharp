@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Chapter10_Chapter11_FormsApp {
+﻿namespace Chapter10_Chapter11_FormsApp {
     class ControlStudent {
         Student std = new Student();
 

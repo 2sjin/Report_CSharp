@@ -20,7 +20,10 @@ namespace Chapter10_Chapter11_FormsApp {
         // [입력] 버튼을 눌렀을 때
         private void btnInsert_Click(object sender, EventArgs e) {
             // 텍스트박스가 하나라도 공백이면 학생을 추가하지 않음
-            if (txtId.Text.Trim().Equals("") || txtName.Text.Trim().Equals("") || txtEmail.Text.Trim().Equals("")) {
+            bool isBlank = txtId.Text.Trim().Equals("")
+                || txtName.Text.Trim().Equals("")
+                || txtEmail.Text.Trim().Equals("");
+            if (isBlank) {           
                 MessageBox.Show("모든 학생정보를 입력해주세요.", "입력");
                 return;
             }

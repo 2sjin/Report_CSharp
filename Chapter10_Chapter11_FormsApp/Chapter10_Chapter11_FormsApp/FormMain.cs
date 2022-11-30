@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Chapter10_Chapter11_FormsApp {
@@ -28,7 +21,6 @@ namespace Chapter10_Chapter11_FormsApp {
             Form11_8 frm11_8 = new Form11_8();
             frm11_8.ShowDialog();
         }
-
 
         private void 학생관리프로그램ToolStripMenuItem_Click(object sender, EventArgs e) {
             FormStudentManager frmStdManager = new FormStudentManager();
