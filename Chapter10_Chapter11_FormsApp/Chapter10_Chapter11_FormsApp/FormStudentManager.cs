@@ -58,6 +58,7 @@ namespace Chapter10_Chapter11_FormsApp {
         private void btnDelete_Click(object sender, EventArgs e) {
             if (listView1.SelectedItems.Count > 0)
                 listView1.Items.Remove(listView1.SelectedItems[0]);
+            FormClear();
         }
 
         // [종료] 버튼을 눌렀을 때
@@ -70,7 +71,19 @@ namespace Chapter10_Chapter11_FormsApp {
             ctrl.ClearList();
             foreach (ListViewItem lvi in listView1.Items)
                 ctrl.AddStudentToList(lvi.SubItems[0].Text, lvi.SubItems[1].Text, lvi.SubItems[2].Text);
-            ctrl.SaveToFile();
+            ctrl.SaveToFile();  // 실제로 파일에 데이터를 저장하는 함수가 호출됨
+        }
+
+        // Form이 로드될 때(파일로부터 데이터를 불러옴)
+        private void FormStudentManager_Load(object sender, EventArgs e) {
+            List<string[]> strList = ctrl.LoadFromFile();
+            foreach(String[] strArray in strList) {
+                string[] sitems = new string[] { strArray[0], strArray[1], strArray[2] };
+                ListViewItem lvi = new ListViewItem(sitems);
+                listView1.Items.Add(lvi);
+                listView1.EndUpdate();
+                FormClear();
+            }
         }
     }
 }

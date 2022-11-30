@@ -21,24 +21,35 @@ namespace Chapter10_Chapter11_FormsApp {
             stdList.Clear();
         }
 
-        // 학생 정보를 파일로부터 불러옴
-        public void LoadFromFile() {
+        // 학생 정보를 파일로부터 불러온 후, 문자열 리스트에 저장하여 리턴함
+        public List<string[]> LoadFromFile() {
+            List<string[]> strList = new List<string[]>();
             fs = File.OpenRead(FILE_NAME);
             sr = new StreamReader(fs);      // 바이트 스트림을 문자 스트림으로 변환
             
-            if (File.Exists(FILE_NAME) == false) {
-                return;
-            }
+            // 파일이 존재하지 않으면 리턴
+            if (File.Exists(FILE_NAME) == false)
+                return null;
+
+            // 파일의 끝을 만날 때까지 한 줄씩 읽기
+            stdList.Clear();
             while (sr.EndOfStream == false) {
                 string data = sr.ReadLine();
                 if (data == null)
                     break;
-                string[] items = data.Split(',');
-                // student.ID = items[0].ToString(), items[1].ToString(), items[2].ToString());
+                string[] sitems = data.Split(',');
+                stdList.Add(new Student(sitems[0], sitems[1], sitems[2]));
+            }
+
+            foreach (Student std in stdList) {
+                string[] tempStd = { std.Id, std.Name, std.Email };
+                strList.Add(tempStd);
             }
 
             sr.Close();
             fs.Close();
+
+            return strList;
         }
 
         // 학생 정보를 파일에 저장

@@ -237,6 +237,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "FormStudentManager";
             this.Text = "학생관리 프로그램(파일 처리)";
+            this.Load += new System.EventHandler(this.FormStudentManager_Load);
             this.groupBox1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
