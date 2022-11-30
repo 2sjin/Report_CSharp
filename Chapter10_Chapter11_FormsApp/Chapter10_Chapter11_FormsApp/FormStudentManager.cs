@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Windows.Forms;
 
 namespace Chapter10_Chapter11_FormsApp {
@@ -28,10 +29,7 @@ namespace Chapter10_Chapter11_FormsApp {
                 return;
             }
             
-            ctrl.SetStudent(txtId.Text, txtName.Text, txtEmail.Text);
-            Student std = ctrl.GetStudent();
-
-            string[] sitems = new string[] { std.Id, std.Name, std.Email };
+            string[] sitems = new string[] { txtId.Text, txtName.Text, txtEmail.Text };
             ListViewItem lvi = new ListViewItem(sitems);
             listView1.Items.Add(lvi);
             listView1.EndUpdate();
@@ -65,6 +63,14 @@ namespace Chapter10_Chapter11_FormsApp {
         // [종료] 버튼을 눌렀을 때
         private void btnClose_Click(object sender, EventArgs e) {
             this.Close();
+        }
+
+        // [파일에 저장] 버튼을 눌렀을 때
+        private void btnSaveToFile_Click(object sender, EventArgs e) {
+            ctrl.ClearList();
+            foreach (ListViewItem lvi in listView1.Items)
+                ctrl.AddStudentToList(lvi.SubItems[0].Text, lvi.SubItems[1].Text, lvi.SubItems[2].Text);
+            ctrl.SaveToFile();
         }
     }
 }

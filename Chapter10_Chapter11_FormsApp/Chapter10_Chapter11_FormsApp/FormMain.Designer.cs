@@ -83,15 +83,15 @@
             // 예제118ToolStripMenuItem
             // 
             this.예제118ToolStripMenuItem.Name = "예제118ToolStripMenuItem";
-            this.예제118ToolStripMenuItem.Size = new System.Drawing.Size(217, 26);
+            this.예제118ToolStripMenuItem.Size = new System.Drawing.Size(292, 26);
             this.예제118ToolStripMenuItem.Text = "예제 11-8";
             this.예제118ToolStripMenuItem.Click += new System.EventHandler(this.예제118ToolStripMenuItem_Click);
             // 
             // 학생관리프로그램ToolStripMenuItem
             // 
             this.학생관리프로그램ToolStripMenuItem.Name = "학생관리프로그램ToolStripMenuItem";
-            this.학생관리프로그램ToolStripMenuItem.Size = new System.Drawing.Size(217, 26);
-            this.학생관리프로그램ToolStripMenuItem.Text = "학생관리 프로그램";
+            this.학생관리프로그램ToolStripMenuItem.Size = new System.Drawing.Size(292, 26);
+            this.학생관리프로그램ToolStripMenuItem.Text = "학생관리 프로그램(파일 처리)";
             this.학생관리프로그램ToolStripMenuItem.Click += new System.EventHandler(this.학생관리프로그램ToolStripMenuItem_Click);
             // 
             // textBox1
