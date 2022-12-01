@@ -101,7 +101,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(484, 247);
             this.textBox1.TabIndex = 1;
-            this.textBox1.Text = "예제 9-9는 메인 From에 구현하였습니다.";
+            this.textBox1.Text = "예제 9-9는 메인 From에 구현하였습니다.\r\n\r\n[11.30] 학생관리 프로그램에 파일 처리 기능 추가";
             // 
             // button1
             // 
