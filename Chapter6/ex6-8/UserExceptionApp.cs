@@ -1,6 +1,6 @@
 ﻿using System;
 
-// 예제 6-8을 아주 크게 변형하였음
+// 예제 6-8을 크게 변형하였음
 
 namespace ex6_8 {
     class UserErrException : ApplicationException {
