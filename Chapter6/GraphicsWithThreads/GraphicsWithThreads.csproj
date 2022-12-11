@@ -80,4 +80,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>TASKKILL  /FI "STATUS eq RUNNING" /IM GraphicsWithThreads.exe /F /T</PreBuildEvent>
+  </PropertyGroup>
 </Project>

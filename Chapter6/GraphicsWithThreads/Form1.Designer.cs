@@ -45,7 +45,7 @@
             this.그리기ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(463, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(462, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -65,71 +65,80 @@
             // 사각형ToolStripMenuItem
             // 
             this.사각형ToolStripMenuItem.Name = "사각형ToolStripMenuItem";
-            this.사각형ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.사각형ToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
             this.사각형ToolStripMenuItem.Text = "사각형";
+            this.사각형ToolStripMenuItem.Click += new System.EventHandler(this.사각형ToolStripMenuItem_Click);
             // 
             // 원ToolStripMenuItem
             // 
             this.원ToolStripMenuItem.Name = "원ToolStripMenuItem";
-            this.원ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.원ToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
             this.원ToolStripMenuItem.Text = "원";
+            this.원ToolStripMenuItem.Click += new System.EventHandler(this.원ToolStripMenuItem_Click);
             // 
             // 채우기ToolStripMenuItem
             // 
             this.채우기ToolStripMenuItem.Name = "채우기ToolStripMenuItem";
-            this.채우기ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.채우기ToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
             this.채우기ToolStripMenuItem.Text = "채우기";
+            this.채우기ToolStripMenuItem.Click += new System.EventHandler(this.채우기ToolStripMenuItem_Click);
             // 
             // 반짝반ToolStripMenuItem
             // 
             this.반짝반ToolStripMenuItem.Name = "반짝반ToolStripMenuItem";
-            this.반짝반ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.반짝반ToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
             this.반짝반ToolStripMenuItem.Text = "반짝반짝";
+            this.반짝반ToolStripMenuItem.Click += new System.EventHandler(this.반짝반짝ToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(221, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(149, 6);
             // 
             // 종료ToolStripMenuItem
             // 
             this.종료ToolStripMenuItem.Name = "종료ToolStripMenuItem";
-            this.종료ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.종료ToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
             this.종료ToolStripMenuItem.Text = "종료";
+            this.종료ToolStripMenuItem.Click += new System.EventHandler(this.종료ToolStripMenuItem_Click);
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.Black;
             this.panel1.Location = new System.Drawing.Point(22, 45);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 150);
+            this.panel1.Size = new System.Drawing.Size(200, 200);
             this.panel1.TabIndex = 1;
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.Color.Black;
             this.panel2.Location = new System.Drawing.Point(241, 45);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(200, 150);
+            this.panel2.Size = new System.Drawing.Size(200, 200);
             this.panel2.TabIndex = 2;
             // 
             // panel3
             // 
-            this.panel3.Location = new System.Drawing.Point(22, 212);
+            this.panel3.BackColor = System.Drawing.Color.Black;
+            this.panel3.Location = new System.Drawing.Point(22, 263);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(200, 150);
+            this.panel3.Size = new System.Drawing.Size(200, 200);
             this.panel3.TabIndex = 3;
             // 
             // panel4
             // 
-            this.panel4.Location = new System.Drawing.Point(241, 212);
+            this.panel4.BackColor = System.Drawing.Color.Black;
+            this.panel4.Location = new System.Drawing.Point(241, 263);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(200, 150);
+            this.panel4.Size = new System.Drawing.Size(200, 200);
             this.panel4.TabIndex = 4;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(463, 386);
+            this.ClientSize = new System.Drawing.Size(462, 478);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
